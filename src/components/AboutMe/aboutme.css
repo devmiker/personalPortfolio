@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.aboutme {
+    padding: 2em 0 2em 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aboutme-body {
+    font-family: "Source Code Pro", monospace;
+    margin-top: -1.5em;
+}
+
+.aboutme-title {
+    font-size: 3rem;
+}
+
+.aboutme-subtitle {
+    background: rgb(70, 175, 115);
+    padding: 0.25em 1em;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.aboutme-img {
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 600px) {
+    .aboutme {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .aboutme-title {
+        grid-area: title;
+    }
+
+    .aboutme-subtitle {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(0px + 4em);
+    }
+
+    .aboutme-img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
