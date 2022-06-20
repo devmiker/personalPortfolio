@@ -7,19 +7,19 @@
 }
 
 .aboutme-body {
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--subtitle-font);
     margin-top: -1.5em;
 }
 
 .aboutme-title {
-    font-size: 3rem;
+    font-size: var(--title-fs);
 }
 
 .aboutme-subtitle {
-    background: rgb(70, 175, 115);
+    background: var(--component-color);
+    font-family: var(--subtitle-font);
+    font-size: var(--subtitle-fs);
     padding: 0.25em 1em;
-    font-family: "Source Code Pro", monospace;
-    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1em;
 }

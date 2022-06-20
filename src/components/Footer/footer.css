@@ -2,11 +2,11 @@
 
 /*Footer*/
 .footer {
-    background: rgb(70, 175, 115);
-    color: black;
+    background: var(--component-color);
+    color: var(--component-color2);
     text-align: center;
     padding: 1em 0 1em 0;
-    font-size: 1.25rem;
+    font-size: var(--subtitle-fs);
 }
 
 .footer a {
@@ -26,7 +26,7 @@
 
 .footer-link:hover {
     text-decoration: underline;
-    color: rgb(187, 190, 201);
+    color: var(--bg-color);
 }
 
 /*Social Media*/
@@ -44,7 +44,7 @@
 }
 
 .social-list-item:hover {
-    color: rgb(187, 190, 201);
+    color: var(--bg-color);
 }
 
 .social-list-link {
@@ -53,15 +53,15 @@
 
 .copy-right {
     text-align: center;
-    color: black;
-    font-family: "Source Code Pro", monospace;
-    font-size: 1.2rem;
+    color: var(--text-color);
+    font-family: var(--subtitle-font);
+    font-size: var(--subtitle-fs);
     font-weight: 600;
     margin-top: 2em;
     margin-bottom: -1.5em;
 }
 
 .copy-right:hover {
-    color: rgb(187, 190, 201);
+    color: var(--bg-color);
     text-decoration: underline;
 }

@@ -1,6 +1,6 @@
 import './navbar.css';
 import { FaCode } from 'react-icons/fa';
-import MenuIcon from '../images/icons8-menu.json';
+import MenuIcon from '../../assets/images/icons8-menu.json';
 
 const Navbar = () => {
     return (

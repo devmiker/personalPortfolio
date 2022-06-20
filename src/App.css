@@ -34,23 +34,3 @@ h3 {
     line-height: 1;
     margin: 0;
 }
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 3.75rem;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-

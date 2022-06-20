@@ -1,0 +1,9 @@
+:root {
+    --component-color: rgb(70, 175, 115);
+    --component-color2: black;
+    --bg-color: rgb(187, 190, 201);
+    --text-color: black;
+    --title-fs: 3rem;
+    --subtitle-fs: 1.25rem;
+    --subtitle-font: "Source Code Pro", monospace;
+}
