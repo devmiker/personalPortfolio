@@ -1,62 +1,63 @@
 @charset "utf-8";
 
 .aboutme {
-    padding: 2em 0 2em 0;
-    max-width: 1000px;
-    margin: 0 auto;
+  padding: 2em 0 2em 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .aboutme-body {
-    font-family: var(--subtitle-font);
-    margin-top: -1.5em;
+  font-family: var(--subtitle-font);
+  margin-top: -1.5em;
+  font-weight: 550;
 }
 
 .aboutme-title {
-    font-size: var(--title-fs);
+  font-size: var(--title-fs);
 }
 
 .aboutme-subtitle {
-    background: var(--component-color);
-    font-family: var(--subtitle-font);
-    font-size: var(--subtitle-fs);
-    padding: 0.25em 1em;
-    font-weight: 600;
-    margin-bottom: 1em;
+  background: var(--component-color);
+  font-family: var(--subtitle-font);
+  font-size: var(--subtitle-fs);
+  padding: 0.25em 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .aboutme-img {
-    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 600px) {
-    .aboutme {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        grid-template-areas:
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
+  .aboutme {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
 
-    .aboutme-title {
-        grid-area: title;
-    }
+  .aboutme-title {
+    grid-area: title;
+  }
 
-    .aboutme-subtitle {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(0px + 4em);
-    }
+  .aboutme-subtitle {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(0px + 4em);
+  }
 
-    .aboutme-img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
+  .aboutme-img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
 }

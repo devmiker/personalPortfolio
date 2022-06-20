@@ -18,8 +18,8 @@
   font-family: "Source Code Pro", monospace;
   display: flex;
   float: right;
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .nav-ul-li {
@@ -61,7 +61,7 @@
   }
   .nav-logo {
     display: inline-block;
-    margin: 1.1em 1em 0.7em 1em;
+    margin: 1.1em 1em 0.5em 1em;
     text-align: center;
   }
 
